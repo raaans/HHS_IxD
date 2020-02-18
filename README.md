@@ -15,4 +15,4 @@ The possible device files are 'mainScreen' (desktop), 'dataPad_Large' (tablet) a
 * 'footer' (styling for the footer)
 * 'header' (styling for the header)
 * 'modal' (styling for modal panel pop-ups)
-* 'typography' (styling for <p>, <h1>, <a>, etc.)
+* 'typography' (styling for p, h1, a, etc.)
