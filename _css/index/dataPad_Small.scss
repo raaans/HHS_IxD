@@ -1,8 +1,6 @@
 //mobile-only styling
 
-@import '../_partials/base';
-
-main {
+section.content {
     padding: 32px 0px;
     width: 100vw;
     display: flex;
@@ -10,7 +8,7 @@ main {
     justify-content: center;
     align-items: center;
 
-    section {
+    main {
         max-width: 85vw;
         //max-height: 100vh;
         display: flex;

@@ -1,15 +1,13 @@
 //desktop-only styling
 
-@import '../_partials/base';
-
 header {
     height: 10vh;
 }
 
-main {
+section.content {
     min-height: 70vh;
 
-    section {
+    main {
         max-width: 40vw;
     }
 }
