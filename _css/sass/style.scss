@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    animation: all 400ms;
+    transition: all 400ms;
+}
+
+body {
+    overflow: hidden;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        max-width: 35vw;
+        max-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-family: "acumin-pro", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+            margin-left: -4px;
+            align-self: center;
+
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        section {
+            p {
+                font-family: "acumin-pro", sans-serif;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 28px;
+
+                text-align: justify;
+
+                margin-bottom: 16px;
+
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+
+                a {
+                    text-decoration: none;
+                    color: #D40470;
+                    border-bottom: 1px solid transparent;
+                    transition: all ease-in-out 0.2s;
+                }
+
+                a:hover {
+                    border-color: #D40470;
+                }
+                
+                a:active {
+                    border-color: #D40470;
+                }
+            }
+        }
+    }
+}

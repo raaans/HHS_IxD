@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    animation: all 400ms;
+    transition: all 400ms;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    section {
+        max-width: 85vw;
+
+        h1 {
+            font-family: "acumin-pro" , sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            margin-top: 15vh;
+            margin-bottom: 32px;
+        }
+
+        section {
+            p {
+                font-family: "acumin-pro" , sans-serif;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 24px;
+
+                text-align: justify;
+
+                margin-bottom: 16px;
+
+                a {
+                    text-decoration: none;
+                    color: #D40470;
+                    border-bottom: 1px solid transparent;
+                    transition: all ease-in-out 0.2s;
+                }
+
+                a:hover {
+                    border-color: #D40470;
+                }
+                
+                a:active {
+                    border-color: #D40470;
+                }
+            }
+        }
+    }
+}
