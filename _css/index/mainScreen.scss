@@ -1,0 +1,34 @@
+//desktop-only styling
+
+@import '../_partials/base';
+
+header {
+    height: 10vh;
+}
+
+main {
+    min-height: 70vh;
+
+    section {
+        max-width: 40vw;
+    }
+}
+
+.modal {
+
+    .modal-content {
+        width: 30vw;
+        min-width: 420px;
+        min-height: 25vh;
+    }
+}
+
+footer {
+    min-height: 10vh;
+
+    div#footer-content {
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,5 @@
+@import url("dataPad_Small.scss") (max-width: 600px);
+@import url("dataPad_Large.scss") (min-width: 600px);
+@import url("mainScreen.scss") (min-width: 992px);
+
+/*# sourceMappingURL=query.css.map */
