@@ -209,13 +209,13 @@ body footer section.text-centered a:hover {
 }
 
 header {
-  height: 10vh;
+  height: 9vh;
 }
 
 section.content {
-  min-height: 88vh;
+  height: 90vh;
   width: 92vw;
-  margin: 1vh 4vw;
+  margin: 0.9vh 4vw 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -232,14 +232,14 @@ section.content main {
 }
 section.content main canvas {
   width: 96% !important;
-  height: 90% !important;
+  height: 96% !important;
   margin: 2%;
 }
 section.content section.modulesContainer {
   width: 20vw;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
 }
 section.content section.modulesContainer section.module {
   display: flex;
@@ -283,6 +283,7 @@ section.content section.modulesContainer section.module--fuel a {
 section.content section.modulesContainer section.module {
   width: 20vw;
   height: 20vh;
+  margin: 24px 0px;
 }
 section.content section.modulesContainer section.module h2 {
   margin-top: 2px;
@@ -307,23 +308,11 @@ section.content section.modulesContainer section.module div.drillDownButtons {
   justify-content: space-around;
   align-items: center;
 }
-section.content section.modulesContainer section.module--food {
-  margin-top: 48px;
-}
 
 .modal .modal-content {
   width: 30vw;
   min-width: 420px;
   min-height: 25vh;
-}
-
-footer {
-  min-height: 10vh;
-}
-footer div#footer-content {
-  width: 70%;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 /*# sourceMappingURL=mainScreen.css.map */

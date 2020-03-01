@@ -3,6 +3,7 @@
 section.module {
     width: 20vw;
     height: 20vh;
+    margin: 24px 0px;
 
     h2 {
         margin-top: 2px;
@@ -30,8 +31,4 @@ section.module {
         justify-content: space-around;
         align-items: center;
     }
-}
-
-section.module--food {
-    margin-top: 48px;
 }

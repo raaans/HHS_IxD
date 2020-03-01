@@ -16,22 +16,24 @@ var chart = new Chart(ctx, {
         datasets: [{
             label: 'Food',
             borderColor: '#ccac55',
-            backgroundColor: 'transparent',
+            fill: false,
             data: [100, 94, 88, 84, 80, 75, 73]
         }, {
             label: 'Water',
             borderColor: '#5575cc',
-            backgroundColor: 'transparent',
+            fill: false,
             data: [100, 94, 87, 82, 78, 74, 70]
         }, {
             label: 'Fuel',
             borderColor: '#cc7155',
-            backgroundColor: 'transparent',
+            fill: false,
             data: [100, 80, 70, 65, 62, 60, 59]
         }, {
             label: 'Minimum Reserves',
             borderColor: '#c65d3c',
-            backgroundColor: 'transparent',
+            fill: false,
+            borderDash: [5, 5],
+            pointRadius: 0,
             data: [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
         }]
     },
