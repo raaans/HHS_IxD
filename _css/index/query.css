@@ -1,5 +1,5 @@
-@import url("../_partials/_base.scss");
-
-@import url("dataPad_Small.scss") (max-width: 600px);
-@import url("dataPad_Large.scss") (min-width: 600px);
-@import url("mainScreen.scss") (min-width: 992px);
+/*@import url("dataPad_Small.css") (max-width: 600px);*/
+/*@import url("dataPad_Large.css") (min-width: 600px);*/
+@import url("mainScreen.css")
+/*(min-width: 992px)*/
+;

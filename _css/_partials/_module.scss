@@ -1,0 +1,51 @@
+section.module {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 16px 0px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px 2px $color-header-bg;
+
+    h2 {
+        width: 100%;
+        border-bottom: 1px solid $color-copy;
+        text-align: center;
+    }
+
+    div.summary {
+        width: 100%;
+    }
+
+    div.drillDownButtons {
+
+        a {
+            padding: 8px 10px 6px;
+            border-radius: 4px;
+        }
+    }
+}
+
+section.module--food {
+    border: 2px solid $color-food;
+
+    a {
+        background-color: $color-food;
+    }
+}
+
+section.module--water {
+    border: 2px solid $color-water;
+
+    a {
+        background-color: $color-water;
+    }
+}
+
+section.module--fuel {
+    border: 2px solid $color-fuel;
+
+    a {
+        background-color: $color-fuel;
+    }
+}

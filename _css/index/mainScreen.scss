@@ -1,19 +1,43 @@
 //desktop-only styling
 
+@import '../_partials/base.scss';
+
 header {
     height: 10vh;
 }
 
 section.content {
-    min-height: 70vh;
+    min-height: 88vh;
+    width: 92vw;
+    margin: 1vh 4vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     main {
-        max-width: 40vw;
+        width: 72vw;
+        height: 86vh;
+        margin: 1vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        @import '../_partials/mainscreen/projections-mainscreen';
+    }
+
+    section.modulesContainer {
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        @import '../_partials/mainscreen/module-mainscreen';
     }
 }
 
 .modal {
-
     .modal-content {
         width: 30vw;
         min-width: 420px;

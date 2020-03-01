@@ -7,27 +7,75 @@
     <meta name="description" content="" />
 
     <link href="_css/index/query.css" type="text/css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.typekit.net/xhr3jhr.css">
     <link rel="shortcut icon" type='image/x-icon' href="icons/favico.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oxanium&display=swap" rel="stylesheet">
 
-    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <title>Quartermaster Dashboard</title>
 </head>
 
 <body>
     <header>
-        
+        <h1>ITS Quartermaster | Resource Usage</h1>
     </header>
 
-    <section>
+    <section class="content">
 
         <main>
+            <canvas id="qmProjections" style="height: 100%; width: 100%;"></canvas>
         </main>
+
+        <section class="modulesContainer">
+
+            <section class="module module--food">
+                <h2>Food Logs</h2>
+
+                <div class="summary">
+                    <canvas id="foodSummary"></canvas>
+                </div>
+
+                <div class="drillDownButtons">
+                    <a href="">Isolate food</a>
+                    <a href="">Add Entry</a>
+                </div>
+            </section>
+
+            <section class="module module--water">
+                <h2>Water Logs</h2>
+
+                <div class="summary">
+                    <canvas id="waterSummary"></canvas>
+                </div>
+
+                <div class="drillDownButtons">
+                    <a href="">Isolate Water</a>
+                    <a href="">Add Entry</a>
+                </div>
+            </section>
+
+            <section class="module module--fuel">
+                <h2>Fuel Logs</h2>
+
+                <div class="summary">
+                    <canvas id="fuelSummary"></canvas>
+                </div>
+
+                <div class="drillDownButtons">
+                    <a href="">Isolate Fuel</a>
+                    <a href="">Add Entry</a>
+                </div>
+            </section>
+
+        </section>
 
     </section>
 
     <footer>
 
     </footer>
+
+    <script src="_js/qmProjections.js"></script>
 
 </body>
 

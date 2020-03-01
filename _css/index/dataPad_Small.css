@@ -1,0 +1,33 @@
+section.content {
+  padding: 32px 0px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.content main {
+  max-width: 85vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#contact-modal {
+  align-items: flex-start;
+  align-self: flex-start;
+}
+div#contact-modal .modal-content {
+  margin-top: 8px;
+  overflow-y: scroll;
+}
+
+footer div#footer-content {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+footer div#footer-content section {
+  margin: 8px 0px;
+}
+
+/*# sourceMappingURL=dataPad_Small.css.map */
