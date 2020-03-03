@@ -19,9 +19,12 @@ section.module {
 
     div.drillDownButtons {
 
-        a {
-            padding: 8px 10px 6px;
+        button {
+            padding: 8px 10px;
+            margin: 2px;
+            border: none;
             border-radius: 4px;
+            color: white;
         }
     }
 }
@@ -29,7 +32,7 @@ section.module {
 section.module--food {
     border: 2px solid $color-food;
 
-    a {
+    button {
         background-color: $color-food;
     }
 }
@@ -37,7 +40,7 @@ section.module--food {
 section.module--water {
     border: 2px solid $color-water;
 
-    a {
+    button {
         background-color: $color-water;
     }
 }
@@ -45,7 +48,7 @@ section.module--water {
 section.module--fuel {
     border: 2px solid $color-fuel;
 
-    a {
+    button {
         background-color: $color-fuel;
     }
 }

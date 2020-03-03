@@ -264,26 +264,29 @@ section.content section.modulesContainer section.module h2 {
 section.content section.modulesContainer section.module div.summary {
   width: 100%;
 }
-section.content section.modulesContainer section.module div.drillDownButtons a {
-  padding: 8px 10px 6px;
+section.content section.modulesContainer section.module div.drillDownButtons button {
+  padding: 8px 10px;
+  margin: 2px;
+  border: none;
   border-radius: 4px;
+  color: white;
 }
 section.content section.modulesContainer section.module--food {
   border: 2px solid #ccac55;
 }
-section.content section.modulesContainer section.module--food a {
+section.content section.modulesContainer section.module--food button {
   background-color: #ccac55;
 }
 section.content section.modulesContainer section.module--water {
   border: 2px solid #5575cc;
 }
-section.content section.modulesContainer section.module--water a {
+section.content section.modulesContainer section.module--water button {
   background-color: #5575cc;
 }
 section.content section.modulesContainer section.module--fuel {
   border: 2px solid #cc7155;
 }
-section.content section.modulesContainer section.module--fuel a {
+section.content section.modulesContainer section.module--fuel button {
   background-color: #cc7155;
 }
 section.content section.modulesContainer section.module {
