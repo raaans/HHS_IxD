@@ -30,4 +30,13 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    header {
+        z-index: $z-header;
+    }
+
+    section.content {
+        z-index: $z-content;
+    }
+
 }

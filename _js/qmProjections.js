@@ -60,3 +60,37 @@ var chart = new Chart(ctx, {
         }
     }
 });
+
+
+//function to update food values
+$('#updateFood').click(function () {
+
+    var logValue = parseFloat($('#newFoodLog').val());
+
+    chart.data.datasets[0].data.push({
+        y: logValue
+    });
+    chart.update();
+});
+
+//function to update water values
+$('#updateWater').click(function () {
+
+    var logValue = parseFloat($('#newWaterLog').val());
+
+    chart.data.datasets[1].data.push({
+        y: logValue
+    });
+    chart.update();
+});
+
+//function to update fuel values
+$('#updateFuel').click(function () {
+
+    var logValue = parseFloat($('#newFuelLog').val());
+
+    chart.data.datasets[2].data.push({
+        y: logValue
+    });
+    chart.update();
+});

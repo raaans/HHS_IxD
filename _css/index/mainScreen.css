@@ -207,6 +207,12 @@ body footer section.text-centered a {
 body footer section.text-centered a:hover {
   border-color: transparent;
 }
+body header {
+  z-index: 3;
+}
+body section.content {
+  z-index: 2;
+}
 
 header {
   height: 9vh;
