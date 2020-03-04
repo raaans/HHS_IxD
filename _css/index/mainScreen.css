@@ -252,9 +252,8 @@ section.content section.modulesContainer section.module {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-width: 220px;
   min-height: 140px;
-  margin: 16px 0px;
+  margin: 16px;
   border-radius: 4px;
   box-shadow: 2px 2px 4px 2px #131719;
 }
@@ -264,10 +263,10 @@ section.content section.modulesContainer section.module h2 {
   text-align: center;
 }
 section.content section.modulesContainer section.module input {
-  margin-top: 8px;
-  padding: 4px 6px;
-  border: 1px solid white;
-  border-radius: 2px;
+  padding: 8px 10px;
+  border: 0px solid transparent;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px #666 inset;
 }
 section.content section.modulesContainer section.module input[type=number]::-webkit-inner-spin-button,
 section.content section.modulesContainer section.module input[type=number]::-webkit-outer-spin-button {
@@ -282,8 +281,9 @@ section.content section.modulesContainer section.module div.drillDownButtons {
 }
 section.content section.modulesContainer section.module div.drillDownButtons button {
   padding: 8px 10px;
-  margin: 2px;
-  border: none;
+  margin: 2px 4px;
+  border: 0px solid;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.4);
   border-radius: 4px;
   color: white;
 }
@@ -306,6 +306,7 @@ section.content section.modulesContainer section.module--fuel button {
   background-color: #cc7155;
 }
 section.content section.modulesContainer section.module {
+  min-width: 220px;
   width: 16vw;
   height: 20vh;
   margin: 24px 0px;
