@@ -1,26 +1,13 @@
 @import '../module';
 
 section.module {
-    width: 20vw;
+    width: 16vw;
     height: 20vh;
     margin: 24px 0px;
 
     h2 {
         margin-top: 2px;
         padding-bottom: 3px;
-    }
-
-    div.summary {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-height: calc(20vh - 80px);
-
-        canvas {
-            width: 100%;
-            height: 100%;
-        }
     }
 
     div.drillDownButtons {
@@ -30,5 +17,9 @@ section.module {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        button {
+            min-width: 57px;
+        }
     }
 }

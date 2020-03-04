@@ -252,6 +252,8 @@ section.content section.modulesContainer section.module {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  min-width: 220px;
+  min-height: 140px;
   margin: 16px 0px;
   border-radius: 4px;
   box-shadow: 2px 2px 4px 2px #131719;
@@ -261,8 +263,14 @@ section.content section.modulesContainer section.module h2 {
   border-bottom: 1px solid #fff;
   text-align: center;
 }
-section.content section.modulesContainer section.module div.summary {
-  width: 100%;
+section.content section.modulesContainer section.module input {
+  margin-top: 8px;
+  padding: 4px 6px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+section.content section.modulesContainer section.module div.drillDownButtons {
+  margin: 4px 0px;
 }
 section.content section.modulesContainer section.module div.drillDownButtons button {
   padding: 8px 10px;
@@ -290,24 +298,13 @@ section.content section.modulesContainer section.module--fuel button {
   background-color: #cc7155;
 }
 section.content section.modulesContainer section.module {
-  width: 20vw;
+  width: 16vw;
   height: 20vh;
   margin: 24px 0px;
 }
 section.content section.modulesContainer section.module h2 {
   margin-top: 2px;
   padding-bottom: 3px;
-}
-section.content section.modulesContainer section.module div.summary {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-height: calc(20vh - 80px);
-}
-section.content section.modulesContainer section.module div.summary canvas {
-  width: 100%;
-  height: 100%;
 }
 section.content section.modulesContainer section.module div.drillDownButtons {
   margin-bottom: 8px;
@@ -316,6 +313,9 @@ section.content section.modulesContainer section.module div.drillDownButtons {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+section.content section.modulesContainer section.module div.drillDownButtons button {
+  min-width: 57px;
 }
 
 .modal .modal-content {
