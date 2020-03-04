@@ -1,33 +1,346 @@
-section.content {
-  padding: 32px 0px;
-  width: 100vw;
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  animation: all 400ms;
+  transition: all 400ms;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #21272b;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body h1 {
+  font-family: "Oxanium", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 48px;
+  align-self: center;
+}
+body h2,
+body li.article {
+  text-align: left;
+  font-family: "Oxanium", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+body h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+body li h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: justify;
+  margin-bottom: 4px;
+  color: #fff;
+}
+body p {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: justify;
+  margin-bottom: 16px;
+  color: #fff;
+}
+body li {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 8px;
+  color: #fff;
+}
+body .text-centered {
+  text-align: center;
+}
+body a {
+  text-decoration: none;
+  font-family: "Oxanium", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.2s;
+}
+body a:hover {
+  border-color: #fff;
+}
+body p span.em {
+  color: black;
+}
+body span.required {
+  color: #000000;
+}
+body header {
+  width: 100vw;
+  border-bottom: 1px solid #090B0C;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  z-index: 3;
+  background-color: #131719;
+}
+body header a {
+  font-family: "Oxanium", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  color: #8b939b;
+  padding: 4px 8px;
+  margin: 4px 8px;
+  border-bottom: 1px solid transparent;
+}
+body header a:hover {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+}
+body .modal {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  min-width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+body .modal .modal-content {
+  background-color: #21272b;
+  box-shadow: 2px 2px 8px 2px #fff;
+  border: 1px solid #21272b;
+  border-radius: 8px;
+  padding: 32px;
+}
+body .modal .modal-content h2 {
+  margin-bottom: 12px;
+}
+body .modal .modal-content span.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 12px 6px 6px;
+  font-family: "Oxanium", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+body .modal .modal-content span.modal-close:hover {
+  color: #000000;
+}
+body .show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+body footer {
+  border-top: 1px solid #090B0C;
+  width: 80vw;
+  padding: 24px 0px;
+  z-index: 3;
+}
+body footer div#footer-content {
+  display: flex;
+  margin: 0 auto;
+}
+body footer div#footer-content section ul li {
+  list-style-type: none;
+  font-family: "Oxanium", sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+}
+body footer div#footer-content section ul li a {
+  font-weight: 500;
+}
+body footer div#footer-content section ul li.list-head {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+body footer section.text-centered {
+  width: 100%;
+  margin-top: 32px;
+}
+body footer section.text-centered a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  border-bottom: 1px solid #fff;
+}
+body footer section.text-centered a:hover {
+  border-color: transparent;
+}
+body header {
+  z-index: 3;
+}
+body section.content {
+  z-index: 2;
+}
+
+header {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+}
+header #head-mob {
+  display: none;
+}
+
+section.content {
+  min-height: 80vh;
+  width: 96vw;
+  margin: 0.4vh 2vw 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 section.content main {
-  max-width: 85vw;
+  width: 100%;
+  height: 80vh;
+  margin: 1vh;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-div#contact-modal {
-  align-items: flex-start;
-  align-self: flex-start;
-}
-div#contact-modal .modal-content {
-  margin-top: 8px;
-  overflow-y: scroll;
-}
-
-footer div#footer-content {
-  flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
 }
-footer div#footer-content section {
-  margin: 8px 0px;
+section.content main canvas {
+  width: 100% !important;
+  height: 96% !important;
+  margin: 2% 0px;
+}
+section.content section.modulesContainer {
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+section.content section.modulesContainer section.module {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 220px;
+  min-height: 140px;
+  margin: 16px 0px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 4px 2px #131719;
+}
+section.content section.modulesContainer section.module h2 {
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+}
+section.content section.modulesContainer section.module input {
+  margin-top: 8px;
+  padding: 4px 6px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+section.content section.modulesContainer section.module input[type=number]::-webkit-inner-spin-button,
+section.content section.modulesContainer section.module input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+section.content section.modulesContainer section.module input[type=number] {
+  -moz-appearance: textfield;
+}
+section.content section.modulesContainer section.module div.drillDownButtons {
+  margin: 4px 0px;
+}
+section.content section.modulesContainer section.module div.drillDownButtons button {
+  padding: 8px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+section.content section.modulesContainer section.module--food {
+  border: 2px solid #ccac55;
+}
+section.content section.modulesContainer section.module--food button {
+  background-color: #ccac55;
+}
+section.content section.modulesContainer section.module--water {
+  border: 2px solid #5575cc;
+}
+section.content section.modulesContainer section.module--water button {
+  background-color: #5575cc;
+}
+section.content section.modulesContainer section.module--fuel {
+  border: 2px solid #cc7155;
+}
+section.content section.modulesContainer section.module--fuel button {
+  background-color: #cc7155;
+}
+section.content section.modulesContainer section.module {
+  min-width: 160px;
+  margin: 24px 0px;
+}
+section.content section.modulesContainer section.module h2 {
+  margin-top: 2px;
+  padding-bottom: 3px;
+}
+section.content section.modulesContainer section.module input {
+  width: 90px;
+  padding: 8px 10px;
+  border-radius: 4px;
+}
+section.content section.modulesContainer section.module div.drillDownButtons {
+  margin-bottom: -8px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+section.content section.modulesContainer section.module div.drillDownButtons button {
+  margin-bottom: 16px;
+  width: 112px;
+}
+
+.modal .modal-content {
+  width: 30vw;
+  min-width: 420px;
+  min-height: 25vh;
 }
 
 /*# sourceMappingURL=dataPad_Small.css.map */

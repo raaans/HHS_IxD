@@ -269,6 +269,14 @@ section.content section.modulesContainer section.module input {
   border: 1px solid white;
   border-radius: 2px;
 }
+section.content section.modulesContainer section.module input[type=number]::-webkit-inner-spin-button,
+section.content section.modulesContainer section.module input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+section.content section.modulesContainer section.module input[type=number] {
+  -moz-appearance: textfield;
+}
 section.content section.modulesContainer section.module div.drillDownButtons {
   margin: 4px 0px;
 }

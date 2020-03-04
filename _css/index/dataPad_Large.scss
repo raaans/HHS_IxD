@@ -1,41 +1,48 @@
-//tablet-only styling
+//desktop-only styling
+
+@import '../_partials/base.scss';
+
+header {
+    height: 8vh;
+}
 
 section.content {
-    padding: 32px 0px;
-    width: 100vw;
+    min-height: 90vh;
+    width: 92vw;
+    margin: 0.9vh 4vw 0px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     main {
-        max-width: 85vw;
-        //max-height: 100vh;
+        width: 92vw;
+        height: 64vh;
+        margin: 1vh;
+        position: relative;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        
-    }
-    
-}
-
-div#contact-modal {
-    align-items: flex-start;
-    align-self: flex-start;
-    
-    .modal-content {
-        margin-top: 8px;
-        overflow-y: scroll;
-    }
-}
-
-footer {
-    div#footer-content {
-        flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
 
-        section {
-            margin: 8px 0px;
-        }
+        @import '../_partials/dataPadLarge/projections-dpLarge';
+    }
+
+    section.modulesContainer {
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        @import '../_partials/dataPadLarge/module-dpLarge';
+    }
+}
+
+.modal {
+    .modal-content {
+        width: 30vw;
+        min-width: 420px;
+        min-height: 25vh;
     }
 }
